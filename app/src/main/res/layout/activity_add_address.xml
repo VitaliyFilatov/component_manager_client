@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:visibility="visible"
+        tools:context=".AddAddressActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/objectLbl"
+            android:layout_width="0dp"
+            android:layout_weight="100"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:id="@+id/inputCity"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/inputCity"/>
+        <EditText
+            android:id="@+id/inputStreet"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/inputStreet"/>
+        <EditText
+            android:id="@+id/inputBuilding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/inputBuilding"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <Button
+            android:id="@+id/cancelAddAddr"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:textSize="20dp"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/okAddAddr"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:layout_height="match_parent"
+            android:text="@string/ok"
+            android:textSize="20dp"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"/>
+    </LinearLayout>
+
+</android.widget.LinearLayout>

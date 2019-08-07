@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/addEquipmentBtn"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_weight="0.25"-->
+            <!--android:src="@drawable/magnifying_glass"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:scaleType="fitCenter"/>-->
+        <Button
+            android:id="@+id/placementBtn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/add_btn"
+            android:text="@string/placement"
+            android:textColor="#f0f0f0"
+            android:textSize="30dp"
+            tools:fontFamily="serif-monospace" />
+        <Button
+            android:id="@+id/complexTypesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.25"
+            android:text="@string/complexTypes"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            android:textSize="30dp"
+            tools:fontFamily="serif-monospace"/>
+        <Button
+            android:id="@+id/showAllComplexesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.25"
+            android:text="@string/allComplexes"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            android:textSize="30dp"
+            tools:fontFamily="serif-monospace"/>
+
+        <Button
+            android:id="@+id/addNewComplexFromMainBtn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.25"
+            android:text="@string/newComplex"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            android:textSize="30dp"
+            tools:fontFamily="serif-monospace"/>
+
+        <Button
+            android:id="@+id/settings"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.25"
+            android:text="@string/settings"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            android:textSize="30dp"
+            tools:fontFamily="serif-monospace"/>
+
+
+        <Button
+            android:id="@+id/sendInfoToServer"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.25"
+            android:text="@string/sendInfoToServer"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            android:textSize="25dp"
+            tools:fontFamily="serif-monospace"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/testPost"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_weight="0.25"-->
+            <!--android:text="test"-->
+            <!--android:background="@drawable/add_btn"-->
+            <!--android:textColor="#f0f0f0"-->
+            <!--android:textSize="30dp"-->
+            <!--tools:fontFamily="serif-monospace"/>-->
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.25"
+            android:text="@string/exit"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            android:textSize="30dp"
+            tools:fontFamily="serif-monospace"/>
+
+    </LinearLayout>
+</android.widget.LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rootShowComplexes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        tools:context=".ShowComplexesActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <Button
+            android:id="@+id/deleteComplexBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/delete"
+            android:textSize="10dp"
+            android:background="@drawable/add_btn"
+            android:layout_marginRight="5dp"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"/>
+
+        <Button
+            android:id="@+id/changeComplexBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/change"
+            android:textSize="10dp"
+            android:background="@drawable/add_btn"
+            android:layout_marginRight="5dp"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"/>
+
+        <Button
+            android:id="@+id/newComplexBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/newItem"
+            android:textSize="10dp"
+            android:background="@drawable/add_btn"
+            android:layout_marginRight="5dp"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"/>
+
+        <Button
+            android:id="@+id/clearFilterBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/clearFilters"
+            android:textSize="10dp"
+            android:background="@drawable/add_btn"
+            android:layout_marginRight="5dp"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"/>
+
+        <Button
+            android:id="@+id/findComplexesBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/search"
+            android:textSize="10dp"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="@string/complexes"></TextView>
+
+    <com.example.vitaliy.myapplication.CustomElement.InteractiveScrollView
+        android:id="@+id/complexesScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+        <TableLayout
+            android:id="@+id/complexesTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:shrinkColumns="1">
+
+
+        </TableLayout>
+
+    </com.example.vitaliy.myapplication.CustomElement.InteractiveScrollView>
+
+
+
+</android.widget.LinearLayout>

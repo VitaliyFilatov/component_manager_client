@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rootShowComplexes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="110"
+        android:visibility="visible"
+        tools:context=".SearchComplexesActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <Spinner
+            android:id="@+id/searchSpinnerComponentTypesList"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"/>
+
+        <Spinner
+            android:id="@+id/searchSpinnerObjectsList"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <Spinner
+            android:id="@+id/searchSpinnerAddressesList"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"/>
+
+        <Spinner
+            android:id="@+id/searchSpinnerRoomsList"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/searchInputAppendixET"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:hint="@string/inputAppendix"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+
+    <EditText
+        android:id="@+id/searchInputIPET"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:hint="@string/inputIP"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/searchInputAddressIdentityET"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:hint="@string/inputAddrIdentity"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/withEmptyCodes"
+        android:gravity="center"
+        />
+
+    <Spinner
+        android:id="@+id/searchWithEmptyCodes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+
+    <Button
+        android:id="@+id/searchComplexes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/add_btn"
+        android:text="@string/find"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#f0f0f0"
+        android:textSize="20dp"
+        tools:fontFamily="serif-monospace"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:focusableInTouchMode="true">
+
+
+        <EditText
+            android:id="@+id/inputComponentCode"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:hint="@string/componentCode"
+            android:layout_marginRight="5dp"/>
+
+
+        <Button
+            android:id="@+id/scanComponentCode"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:text="@string/scan"
+            android:textSize="18dp"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/searchByComponentCodeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/add_btn"
+        android:text="@string/searchByComponentCode"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#f0f0f0"
+        android:textSize="20dp"
+        tools:fontFamily="serif-monospace"/>
+</android.widget.LinearLayout>

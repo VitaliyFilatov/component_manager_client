@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BindComplexActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true">
+
+            <Button
+                android:id="@+id/backBindComplexBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_btn"
+                android:text="@string/back"
+                android:textColor="#f0f0f0"
+                tools:fontFamily="serif-monospace" />
+            <Button
+                android:id="@+id/saveComplexBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/add_btn"
+                android:textColor="#f0f0f0"
+                tools:fontFamily="serif-monospace"
+                android:text="@string/save"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/saveAndNewBtn"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:background="@drawable/add_btn"
+                android:textColor="#f0f0f0"
+                tools:fontFamily="serif-monospace"
+                android:text="@string/saveAndNew"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+                <Spinner
+                    android:id="@+id/spinnerComplexTypesList"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <Button
+                    android:id="@+id/saveComplexTypeBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/add_btn"
+                    android:textColor="#f0f0f0"
+                    tools:fontFamily="serif-monospace"
+                    android:text="@string/ok"/>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinnerObjectForComplexList"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerAddressForComplexList"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerRoomsForComplexList"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/inputAppendixET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputAppendix"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+
+            <EditText
+                android:id="@+id/inputIPET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputIP"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <EditText
+                android:id="@+id/inputAddressIdentityET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputAddrIdentity"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="@string/components"></TextView>
+
+            <TableLayout
+                android:id="@+id/componentsOfComplexTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+            </TableLayout>
+            <LinearLayout
+                android:id="@+id/bottomToolPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+                <Button
+                    android:id="@+id/deleteComponentFromComplexBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/add_btn"
+                    android:textColor="#f0f0f0"
+                    tools:fontFamily="serif-monospace"
+                    android:text="@string/delete"
+                    android:layout_marginRight="5dp"/>
+                <Spinner
+                    android:id="@+id/spinnerComponentForComplexList"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"/>
+                <Button
+                    android:id="@+id/addComponentToComplexBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/add_btn"
+                    android:textColor="#f0f0f0"
+                    tools:fontFamily="serif-monospace"
+                    android:text="@string/add"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <LinearLayout
+                    android:id="@+id/photoPlace"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"></LinearLayout>
+                    <RelativeLayout
+                        android:id="@+id/photoFrame"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+                        <ImageView
+                            android:id="@+id/photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:id="@+id/frame"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/frame"/>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"></LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/takePhotoBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/add_btn"
+                    android:textColor="#f0f0f0"
+                    tools:fontFamily="serif-monospace"
+                    android:text="@string/takePhoto"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

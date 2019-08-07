@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="110"
+        android:visibility="visible"
+        android:id="@+id/rootPlacement"
+        tools:context=".PlacementActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp">
+
+        <Spinner
+            android:id="@+id/spinnerObjectList"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"/>
+
+        <ImageButton
+            android:id="@+id/addObject"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:src="@drawable/add_plus_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            android:background="@drawable/add_btn"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <Spinner
+            android:id="@+id/spinnerAddressList"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"/>
+
+        <ImageButton
+            android:id="@+id/addAddress"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:src="@drawable/add_plus_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitCenter"
+            android:background="@drawable/add_btn"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/headerCabinets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="@string/cabinets"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/allCabsScroll">
+        <TableLayout
+            android:id="@+id/allCabinetsTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/deleteCabinet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/add_btn"
+        android:text="@string/delete"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#f0f0f0"
+        tools:fontFamily="serif-monospace"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:focusableInTouchMode="true">
+
+
+        <EditText
+            android:id="@+id/inputCabName"
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="match_parent"
+            android:hint="@string/inputCabName"
+            android:layout_marginRight="5dp"/>
+
+
+        <Button
+            android:id="@+id/addCabBtn"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:text="@string/add"
+            android:textSize="10dp"
+            android:background="@drawable/add_btn"
+            android:textColor="#f0f0f0"
+            tools:fontFamily="serif-monospace"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backInPlcmManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/add_btn"
+        android:textColor="#f0f0f0"
+        tools:fontFamily="serif-monospace"
+        android:text="@string/back"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+</android.widget.LinearLayout>

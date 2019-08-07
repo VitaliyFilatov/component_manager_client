@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Component Manager</string>
+    <string name="scan">Скан</string>
+    <string name="show">Посмотреть</string>
+    <string name="on_main">ON MAIN</string>
+    <string name="addEquipment">Добавить оборудование</string>
+    <string name="addObject">Добавить объект</string>
+    <string name="objectName">Название объекта...</string>
+    <string name="done">Готово</string>
+    <string name="newEquipment">Новое оборуование</string>
+    <string name="equipmentType">Тип оборудования...</string>
+    <string name="component">Компонента...</string>
+    <string name="addField">Добавить поле</string>
+    <string name="addComponent">Добавить компоненту</string>
+    <string name="object">Объект</string>
+    <string name="additionalInfo">Примечание</string>
+    <string name="objectNameHeader">Объект</string>
+    <string name="typeHeader">Тип устройства</string>
+    <string name="codeHeader">Код</string>
+    <string name="componentHeader">Компонента</string>
+
+
+    <string name="placement">Размещение</string>
+    <string name="cabinets">Кабинеты</string>
+    <string name="delete">Удалить</string>
+    <string name="back">Назад</string>
+    <string name="add">Добавить</string>
+    <string name="objects">Объекты</string>
+    <string name="allAddresses">Все адреса</string>
+    <string name="inputCabName">Введите название кабинета</string>
+    <string name="inputObjName">Введите название объекта</string>
+    <string name="inputComponentName">Введите название компоненты</string>
+    <string name="inputComplexName">Введите название комплекса</string>
+    <string name="inputCity">Введите город</string>
+    <string name="inputStreet">Введите улицу</string>
+    <string name="inputBuilding">Введите здание</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+    <string name="addresses">Адреса</string>
+    <string name="complexTypes">Типы комплексов</string>
+    <string name="components">Компоненты</string>
+    <string name="change">Изменить</string>
+    <string name="newItem">Новый</string>
+    <string name="componentManager">Управление компонентами</string>
+    <string name="allComplexes">Все комплексы</string>
+    <string name="complexes">Комплексы</string>
+    <string name="clearFilters">Очистить фильтры</string>
+    <string name="search">Поиск</string>
+    <string name="bind">Данные</string>
+    <string name="save">Сохранить</string>
+    <string name="find">Найти</string>
+    <string name="newComplex">Новый комплекс</string>
+    <string name="saveName">Сохранить имя</string>
+    <string name="componentCode">Введите код компоненты</string>
+    <string name="searchByComponentCode">Поиск по коду компоненты</string>
+    <string name="exit">Выйти</string>
+    <string name="saveAndNew">Сохранить и создать новый</string>
+    <string name="inputAppendix">Введите примечание</string>
+    <string name="inputAddrIdentity">Введите идентификатор</string>
+    <string name="inputIP">Введите IP-адрес</string>
+    <string name="inputPageSize">Введите размер страницыs</string>
+    <string name="takePhoto">Фото</string>
+    <string name="settings">Настройки</string>
+    <string name="lightUnset">Подсвечивать комплексы с пустыми кодами компонент</string>
+    <string name="withEmptyCodes">С пустыми кодами компонент</string>
+    <string name="sendToServer">Отправить данные</string>
+    <string name="sendPhotoToServer">Отправить фото на сервер</string>
+    <string name="sendInfoToServer">Отправка данных на сервер</string>
+
+    <string name="longTestAddress">longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong</string>
+    <string name="shortTestAddress">address</string>
+
+</resources>
